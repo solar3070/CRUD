@@ -1,0 +1,31 @@
+@font-face { font-family: 'Cafe24Oneprettynight'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff'); font-weight: normal; font-style: normal; }
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+body {
+    background-color:rgba(143, 128, 149, 1);
+}
+
+.block {
+    width: 800px;
+    margin:auto;
+    background-color: white;
+    text-align: center;
+}
+
+img {
+    margin:12px 3px 8px 3px
+}
+
+.link {
+    text-align: center;
+    position: relative;
+    font-family: 'Arvo', serif;
+    font-size:14px;
+    font-weight: bold;
+    margin:65px 0px 10px 0px;
+}
+
+.link a:link, .link a:visited {
+    text-decoration: none;
+    color:rgb(116, 8, 116);
+}

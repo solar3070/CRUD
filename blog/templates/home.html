@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="{% static 'css/home.css' %}" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container">
+            <img src="{% static '배경.jpg' %}" width=250 height=250>
+            <div class="link">
+                <p><a href="{% url 'newblog' %}">Write</a></p>
+                <p><a href="{% url 'album' %}">Album</a></p>
+            </div>
+            <div class="block">
+                {% for blog in blogs %}
+                    <div class="box">
+                        <a href="{% url 'txtdetail' blog.id %}">
+                        <div class="text">
+                            <p id ="date">{{blog.pub_date}}</p>
+                            <p id="title">{{blog.title}}</p>
+                        </div>
+                        </a>
+                        <div class="UD">
+                            <p><a href="{% url 'update' blog.id %}"><수정></a></p>
+                            <p><a href="{% url 'delete' blog.id %}"><삭제></a></p>
+                        </div> 
+                    </div>
+                <hr>
+                {% endfor %}
+            </div>
+        </div>
+        
+    </body>
+
+</html>

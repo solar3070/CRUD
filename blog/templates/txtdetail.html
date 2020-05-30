@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="{% static 'css/txtdetail.css' %}" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="block">
+            <div class="text">
+                <h1>{{detail.title}}</h1>
+                <hr>
+                <p>{{detail.pub_date}}</p>
+                <hr>
+                <p>{{detail.body|linebreaksbr}}</p>
+            </div>
+        </div>  
+    </body>
+
+</html>

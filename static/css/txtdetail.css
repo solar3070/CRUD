@@ -1,0 +1,18 @@
+@font-face { font-family: 'Cafe24Oneprettynight'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+body {
+    background-color:rgba(143, 128, 149, 1);
+}
+
+.block {
+    width: 500px;
+    height: 500px;
+    font-size: 14px;
+    font-family: 'Cafe24Oneprettynight';
+    border: 1px solid black;
+    padding: 10px 20px 0px 20px;
+    background-color: white;
+    margin:auto;
+    margin-top: 78px;
+    text-align: center;
+}

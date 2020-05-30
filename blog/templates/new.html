@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="{% static 'css/new.css' %}" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="block">
+            <div class="text">
+                <form action="{% url 'newblog' %}" method="POST">
+                    {% csrf_token %}
+                    <table>
+                        <h1>글 쓰기</h1>
+                        <hr>
+                        <br>
+                        <p>제목</p>
+                        {{form.title}}
+                        <br><br>
+                        <p>본문</p>
+                        {{form.body}}
+                    </table>
+                    <br><br>
+                    <input class="btn" type="submit" value="제출하기">
+                </form>
+            </div>
+        </div>  
+    </body>
+
+</html>
+
+
